@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Resize event listener for responsive adjustments
   window.addEventListener('resize', handleResize);
 
-  // Form input animations
+  // Form input animations js
   initFormAnimations();
 
   // Trigger initial scroll events
