@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Theme Management
 function initTheme() {
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  const savedTheme = localStorage.getItem('theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
 
@@ -92,7 +92,7 @@ function initTheme() {
 
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
   // Add transition class for smooth theme change
   document.body.classList.add('theme-changing');
