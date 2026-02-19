@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Theme Management
+
 function initTheme() {
   const savedTheme = localStorage.getItem('theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
