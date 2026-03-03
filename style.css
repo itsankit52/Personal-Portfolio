@@ -290,7 +290,7 @@ h6 {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
- 
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -309,7 +309,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 10px;
 }
 
 .logo {
@@ -985,7 +985,7 @@ h6 {
 }
 
 .project-image {
-  height: 220px;
+  height: 140px;
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   position: relative;
   display: flex;
