@@ -176,6 +176,15 @@ function handleScroll() {
   updateActiveNavLink();
 }
 
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("up");
+  } else {
+    navbar.classList.remove("up");
+  }
+});
 function handleNavbarScroll() {
   if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
@@ -606,7 +615,7 @@ function initCardHoverEffects() {
       this.style.transform = 'translateY(-10px) scale(1.02)';
       this.style.boxShadow = 'var(--shadow-hover)';
     });
- 
+
     card.addEventListener('mouseleave', function () {
       this.style.transform = '';
       this.style.boxShadow = '';

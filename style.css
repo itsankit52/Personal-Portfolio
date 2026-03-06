@@ -304,7 +304,9 @@ h6 {
   transition: var(--transition);
   border-bottom: 1px solid var(--glass-border);
 }
-
+.navbar.up{
+  transform: translateY(-10px);
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -321,8 +323,8 @@ h6 {
 }
 
 .logo-text img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50% 0;
 }
 
