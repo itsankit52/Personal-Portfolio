@@ -288,7 +288,7 @@ function animateSkillBars() {
 // Typewriter Effect
 function initTypewriter() {
   const texts = [
-    "Web Developer🌐",
+    "Full-Stack Developer🌐",
     "Problem Solver❓",
     "Tech Enthusiast🖥️"
   ];
