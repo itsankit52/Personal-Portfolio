@@ -10,6 +10,29 @@ const typewriterElement = document.querySelector('.typewriter-text');
 const sections = document.querySelectorAll('section');
 const navbar = document.querySelector('.navbar');
 
+// Feedback Recivre function
+(function () {
+  emailjs.init("gSUBxDEklSI2reSj_");
+})();
+document.getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    emailjs.send("service_w6ov5a8", "template_mz8n699", {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    })
+      .then(function (response) {
+        alert("Message sent successfully!✅");
+        document.getElementById("contact-form").reset();
+      }, function (error) {
+        alert("Failed to send message!❎");
+        console.log(error);
+      });
+  });
 // Loading Screen
 const loadingScreen = document.createElement('div');
 loadingScreen.className = 'loading';
